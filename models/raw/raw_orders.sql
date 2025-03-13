@@ -6,4 +6,5 @@
 
 
 select * 
-from ANALYTICS.PUBLIC.ORDERS
+from 
+{{ source('globalmart', 'orders') }}

@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: globalmart
+    database: analytics
+    schema: public
+    tables:
+      - name: orders
+      - name: products
+      - name: customers
