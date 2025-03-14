@@ -6,5 +6,11 @@ sources:
     schema: public
     tables:
       - name: orders
+        columns:
+          - name: orderid
+            tests:
+              - unique
+              - not_null
+
       - name: products
       - name: customers
