@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: globalmart
+    description: a clone of the Snowflake db
+    database: analytics
+    schema: public
+    tables:
+      - name: orders
+        description: raw orders table
+        columns:
+          - name: orderid
+            description: the unique id of the orders
+            tests:
+              - unique
+              - not_null
+
+      - name: products
+      - name: customers
